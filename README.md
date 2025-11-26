@@ -1,55 +1,78 @@
-Palma Quiropraxia
+🌿 PALMA QUIROPRAXIA – PROJETO DE FRONTt-END
+-
 
-Site profissional moderno criado para Palma Quiropraxia, apresentando serviços de bem‑estar com foco em quiropraxia, liberação miofascial, massagem desportiva, ventosaterapia e dry needling.
+Este é um site institucional criado como projeto de front-end para demonstrar habilidades em HTML, CSS e JavaScript, com foco em design responsivo, UX/UI e boas práticas de desenvolvimento.
 
-🌟 Funcionalidades
+🔗 Demo: palmaquiro.vercel.app
 
-Header fixo com navegação fluida por todas as seções.
+🎯 OBJETIVO DO PROJETO
+------------------------------------------------------------------------------------------------------------
 
-Seção “Herói” com foto do profissional, slogan e botões de ação para WhatsApp e navegação aos serviços.
+- Criar um site moderno e funcional para um profissional de saúde fictício.
 
-Seção “Sobre o profissional”: apresentação da experiência, abordagem e KPIs (anos de prática, pacientes atendidos, avaliação média).
+- Destacar informações importantes de forma clara e visual.
 
-Seção de Serviços: cards descritivos para cada técnica oferecida.
+- Explorar layout responsivo, cards interativos e botões de ação.
 
-Depoimentos de pacientes: feedbacks reais para gerar credibilidade.
+- Implementar integração simples com WhatsApp e formulário de contato funcional.
+  
+💡 FUNCIONALIDADES IMPLEMENTADAS
+--------------------------------------------------------------------------------------------------------------
 
-Contato direto: formulário funcional e links para WhatsApp, e-mail e endereço.
+- Header fixo com navegação fluida entre seções do site.
 
-Botão flutuante de WhatsApp: permite contato rápido de qualquer parte do site.
+- Seção Hero com foto, slogan e call-to-actions (WhatsApp + Serviços).
 
-Rodapé com navegação mínima e direitos autorais atualizados automaticamente.
+- Seção Sobre: apresentação do profissional, lista de KPIs e diferenciais.
 
-Layout responsivo: funciona bem em desktop, tablet e celular.
+- Seção Serviços: cards com descrição de cada serviço oferecido.
 
-Tecnologias utilizadas
+- Depoimentos: cards de feedback de clientes para prática de layout de testimonials.
 
-HTML5 e CSS3 para estrutura e estilo.
+- Contato: formulário funcional + links para WhatsApp e e-mail.
 
-JavaScript para interações, formulário e funcionalidades dinâmicas.
+- Botão flutuante WhatsApp para acesso rápido em qualquer parte da página.
 
-Google Fonts para tipografia moderna.
+- Rodapé com navegação mínima e direitos autorais dinâmicos.
 
-Versão pública
+- Responsivo: funciona bem em desktop, tablet e mobile.
 
-O site está disponível em:
-https://palmaquiro.vercel.app
+🛠 TECNOLOGIAS & FERRAMENTAS
+-------------------------------------------------------------------------------------------------
 
-Como usar / contribuir
+- HTML5 & CSS3 – marcação semântica, layout flex/grid e design responsivo.
 
-Clone o repositório:
+- JavaScript – interações simples, toggle menu e validação de formulário.
 
-git clone https://github.com/seuusuario/palma-quiropraxia.git
+- Google Fonts – tipografia moderna com Inter.
+
+- Vercel – deploy contínuo e hospedagem gratuita.
+
+📂 Estrutura do projeto
+-
+/palmaquiro
+
+├─ index.html
+
+├─ style.css
+
+├─ script.js
+
+├─ images/
+
+└─ README.md
 
 
-Abra o index.html no navegador.
 
-Substitua imagens, textos ou links conforme necessidade.
+🚀 APRENDIZADOS / SKILLS DEMONSTRADAS
+---------------------------------------------------------------------------------------------------------------------------------------
 
-Para contribuir ou sugerir melhorias, envie uma issue ou pull request.
+- Layout responsivo e grid system.
 
-Contato
+- Boas práticas de semântica HTML e organização CSS.
 
-WhatsApp: 11 99311‑5244
+- UX/UI: clareza na navegação, hierarquia visual e calls-to-action.
 
-E-mail: contato@palmaquiro.com
+- Integração de links externos e formulários simples.
+
+- Deploy de projeto front-end no Vercel.
