@@ -379,45 +379,45 @@ p{color:var(--muted); line-height:1.7; font-size:16.5px}
 /* ---------- Processo ---------- */
 .steps{list-style:none; padding:0; margin:28px 0 0; display:grid; gap:22px; position:relative}
 .steps::before{
-  content:""; position:absolute; left:31px; top:30px; bottom:30px; width:2px;
-  background:repeating-linear-gradient(180deg, var(--brand) 0 6px, transparent 6px 12px); opacity:.45;
+  content:""; position:absolute; left:24px; top:26px; bottom:26px; width:2px;
+  background:repeating-linear-gradient(180deg, var(--brand) 0 6px, transparent 6px 12px); opacity:.35;
 }
-.step{position:relative; display:flex; gap:22px; align-items:center}
+.step{position:relative; display:flex; gap:20px; align-items:center}
 .step h3{color:var(--ink); margin:0 0 4px; font-size:18px}
 .step p{margin:0; font-size:15px}
-/* Cubo estático: parado num ângulo 3D; só gira (mostrando o verso) quando clicado/tocado */
+/* Cubo estático e leve (tons claros): só gira (mostrando o verso) quando clicado/tocado */
 .step-cube{
-  --s:62px; --h:calc(var(--s) / 2);
+  --s:50px; --h:calc(var(--s) / 2);
   position:relative; flex:none; display:block; width:var(--s); height:var(--s);
-  padding:0; border:0; background:none; cursor:pointer; perspective:420px;
+  padding:0; border:0; background:none; cursor:pointer; perspective:600px;
   border-radius:12px; font:inherit;
+  filter:drop-shadow(0 6px 10px rgba(94,68,50,.12));
 }
 .cube{
   position:absolute; inset:0; transform-style:preserve-3d;
-  transform:rotateX(-16deg) rotateY(-26deg);
+  transform:rotateX(-10deg) rotateY(-18deg);
   transition:transform .8s cubic-bezier(.34,1.4,.5,1);
 }
-.step-cube[aria-pressed="true"] .cube{transform:rotateX(-16deg) rotateY(154deg)}
+.step-cube[aria-pressed="true"] .cube{transform:rotateX(-10deg) rotateY(162deg)}
 .cube .f{
   position:absolute; inset:0; display:grid; place-items:center; border-radius:10px;
   font-style:normal; backface-visibility:hidden; -webkit-backface-visibility:hidden;
+  box-shadow:inset 0 0 0 1px rgba(201,165,125,.45);
 }
 .f.front{
   transform:translateZ(var(--h));
-  font-family:var(--serif); font-size:28px; color:#fff;
-  background:linear-gradient(135deg, var(--bronze), var(--brand-dark));
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);
+  font-family:var(--serif); font-size:24px; font-weight:500; color:var(--bronze);
+  background:linear-gradient(160deg, #ffffff, #f7f0e7);
 }
 .f.back{
   transform:rotateY(180deg) translateZ(var(--h));
-  background:linear-gradient(135deg, #d9bf9f, var(--brand));
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.4);
+  background:linear-gradient(160deg, #f7f0e7, #ecdcc8);
 }
-.f.back svg{width:46%; height:46%; fill:none; stroke:var(--brand-dark); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round}
-.f.right {transform:rotateY(90deg)  translateZ(var(--h)); background:var(--brand-dark)}
-.f.left  {transform:rotateY(-90deg) translateZ(var(--h)); background:var(--brand-dark)}
-.f.top   {transform:rotateX(90deg)  translateZ(var(--h)); background:#d9bf9f}
-.f.bottom{transform:rotateX(-90deg) translateZ(var(--h)); background:#4a3526}
+.f.back svg{width:46%; height:46%; fill:none; stroke:var(--bronze); stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+.f.right {transform:rotateY(90deg)  translateZ(var(--h)); background:#eadbc7}
+.f.left  {transform:rotateY(-90deg) translateZ(var(--h)); background:#eadbc7}
+.f.top   {transform:rotateX(90deg)  translateZ(var(--h)); background:#fbf7f1}
+.f.bottom{transform:rotateX(-90deg) translateZ(var(--h)); background:#e2cdb3}
 
 /* ---------- Depoimentos (carrossel 3D) ---------- */
 .carousel{display:flex; flex-direction:column; align-items:center}
@@ -613,10 +613,10 @@ p{color:var(--muted); line-height:1.7; font-size:16.5px}
   .card-num{font-size:40px; right:14px; top:10px}
 
   .steps{gap:18px; margin-top:20px}
-  .steps::before{left:25px}
+  .steps::before{left:20px}
   .step{gap:16px}
-  .step-cube{--s:50px}
-  .f.front{font-size:22px}
+  .step-cube{--s:42px}
+  .f.front{font-size:20px}
   .step h3{font-size:16.5px}
   .step p{font-size:14.5px}
 
